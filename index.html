@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>  
+    <title>Flipkart-Clone</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=brave">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header Class -->
+    <div class="container-fluid bg-dark header fixed-top">
+        <div class="row d-flex py-2">
+            <!-- FlipCart Logo -->
+            <div class="col logo offset-lg-1">
+                <a href="#">
+                    <img width="75" src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" 
+                    alt="Flipkart" title="Flipkart" class="_2xm1JU">
+                </a>
+                <a href="#">
+                    Explore<span> Plus</span>
+                    <img width="10" src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png">
+                </a>
+            </div>
+            
+            <!-- Search Button -->
+            <div class="col-md-4 search d-flex dropdown bg-secondary text-light">
+                <input class="form-control dropdown-toggle bg-secondary text-light" type="search" placeholder="Search for products, brands and more.." id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa-solid fa-magnifying-glass mt-2 ml-sm-1 text-light"></i>
+                <div class="dropdown-menu col-12 search-item bg-secondary " aria-labelledby="navbarDropdown">
+                    <h6 class="ml-4 bg-secondary text-light">Discover more...</h6>
+                    <div class="dropdown-divider bg-secondary "></div>
+                    <a class="dropdown-item py-2 bg-secondary text-light" href="#"><i class="fa-solid fa-magnifying-glass "></i>  mobiles</a>
+                    <a class="dropdown-item py-2 bg-secondary text-light" href="#"><i class="fa-solid fa-magnifying-glass "></i>  shoes</a>
+                    <a class="dropdown-item py-2 bg-secondary text-light" href="#"><i class="fa-solid fa-magnifying-glass "></i>  t shirt</a>
+                    <a class="dropdown-item py-2 bg-secondary text-light" href="#"><i class="fa-solid fa-magnifying-glass "></i>  laptop</a>
+                    <a class="dropdown-item py-2 bg-secondary text-light" href="#"><i class="fa-solid fa-magnifying-glass "></i>  watches</a>
+                </div>
+            </div>            
+            
+            <!-- Login -->
+            <div class="col dropdown login">
+                <button typr="button" class="btn bg-secondary text-light" id="loginMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Login
+                </button>
+                <div class="dropdown-menu login-list col-12 bg-secondary text-light" aria-labelledby="loginMenuButton ">
+                    <div class="d-flex bg-secondary text-light">
+                        <h6 class="ml-md-1 bg-secondary text-light pl-3">New Customer?</h6>
+                        <a href="#" class="ml-md-1 bg-secondary text-white " id="sigUp">  Sign Up</a>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex">
+                        <i class="fa-sharp fa-solid fa-circle-user text-white mx-2 my-2"></i>
+                        <a href="#" class="dropdown-item text-light">My Profile</a>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-plus text-white mx-2 my-2"></i>
+                        <a href="#" class="dropdown-item text-light">Flipcart Plus Zone</a>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-box text-white mx-2 my-2"></i>
+                        <a href="#" class="dropdown-item text-light">Orders</a>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-heart text-white mx-2 my-2"></i>
+                        <a href="#" class="dropdown-item text-light">Whishlist</a>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-ticket text-white mx-2 my-2"></i>
+                        <a href="#" class="dropdown-item text-light">Rewards</a>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-gift text-white mx-2 my-2"></i>
+                        <a href="#" class="dropdown-item text-light">Gift Cards</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- More... -->
+            <div class="col more">
+                <a class="btn btn-secondary dropdown-toggle bg-dark text-light" type="button" id="moreMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </a>
+                  <div class="dropdown-menu more-list bg-secondary text-light" aria-labelledby="moreMenuLink">
+                    <div class="d-flex">
+                        <i class="fa-solid fa-bell text-white mx-2 my-2 bg-secondary text-light"></i>
+                        <a href="#" class="dropdown-item bg-secondary text-light">Notification Preferences</a>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-circle-question text-white mx-2 my-2"></i>
+                        <a href="#" class="dropdown-item text-light">24x7 Customer Care</a>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-arrow-trend-up text-white mx-2 my-2"></i>
+                        <a href="#" class="dropdown-item text-light">Advertise</a>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <div class="d-flex">
+                        <i class="fa-solid fa-download text-white mx-2 my-2"></i>
+                        <a href="#" class="dropdown-item text-light">Download App</a>
+                    </div>
+                  </div>
+            </div>
+             
+            <!-- Cart -->
+            <div class="col md-1 d-flex justify-content-center bg-dark">
+                <i class="fa-solid fa-cart-shopping text-white mt-2"></i>
+                <a href="#" class="btn text-white">Cart</a>
+            </div>
+        </div>
+    </div> 
+    
+    <!-- Carousel -->
+    <div id="carouselExampleControls" class="carousel slide mt-5 mb-1" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="img-fluid w-100" src="https://rukminim1.flixcart.com/fk-p-flap/844/140/image/13111a0cf389df34.jpg?q=100" alt="Cat-Mob-HPW-Realme C33">
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid w-100" src="https://rukminim1.flixcart.com/fk-p-flap/844/140/image/13111a0cf389df34.jpg?q=100" alt="TV-HPW5-APPnDT-CAP1-26Oct-4KTVs">
+          </div>
+          <div class="carousel-item">
+            <img class="img-fluid w-100" src="https://rukminim1.flixcart.com/fk-p-flap/844/140/image/13111a0cf389df34.jpg?q=100" alt="Mattresses">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Sales and Banner -->
+    <div class="d-flex pt-2 my-1 sales-banner">
+        <div class="container-fluid bg-dark pb-2 border content-section text-white">
+            <div class="row pt-3">
+                <div class="col slider-heading">
+                    <h4>Deals of the Day</h4>
+                </div>
+                <div class="col col-sm-4 view-btn ">
+                    <button class="btn btn-primary shadow">View All</button>
+                </div>
+            </div>
+            <hr>
+            
+            <!-- Products and thier Descriptions -->
+            <div class="row d-flex nowrap justify-content-center">
+                <div class="col bg-dark">
+                    <div class="card text-center sales bg-dark">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/kynb6vk0/monitor/1/n/s/lf22t354fhwxxl-full-hd-22-lf22t354fhwxxl-samsung-original-imagats2rjbg9uhv.jpeg?q=70" class="card-img-top p-2 bg-dark img-fluid w-100" alt="Monitor">
+                    <div class="card-body p-1"title="From Rs.11999">
+                        <h6 class="card-title">Monitors</h6>
+                        <a href="#" class="card-link">From Rs.11999</a>
+                        <p class="card-subtitle text-light">SAMSUNG.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col bg-dark">
+                    <div class="card text-center sales bg-dark">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/k3q76a80/camera/x/u/e/sony-apsc-ilce-6100y-b-in5-mirrorless-original-imafm6msr4fghzfw.jpeg?q=70" class="card-img-top p-2 bg-dark img-fluid w-100" alt="Monitor">
+                    <div class="card-body p-1"title="From Rs.5999">
+                        <h6 class="card-title">Camera</h6>
+                        <a href="#" class="card-link">From Rs.9999</a>
+                        <p class="card-subtitle text-light">Nikon</p>
+                    </div>
+                  </div>
+                </div>
+                                <div class="col bg-dark">
+                    <div class="card text-center sales bg-dark">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/jlph9jk0/cycle/h/f/k/skyper-26t-sskp26bk0001-16-hero-original-imaf8ru5xysfgtmx.jpeg?q=70" class="card-img-top p-2 bg-dark img-fluid w-100" alt="Monitor">
+                    <div class="card-body p-1"title="From Rs.9999">
+                        <h6 class="card-title">Bikes</h6>
+                        <a href="#" class="card-link">From Rs.7999</a>
+                        <p class="card-subtitle text-light">Bicycles</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col bg-dark">
+                    <div class="card text-center sales bg-dark">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/jgy0fbk0/bath-towel/p/6/3/ultra-soft-hooded-classic-and-designer-baby-bath-towel-bath-original-imaeqx28bykqqscx.jpeg?q=70" class="card-img-top p-2 bg-dark img-fluid w-100" alt="Monitor">
+                    <div class="card-body p-1"title="From Rs.9999">
+                        <h6 class="card-title">Blankets</h6>
+                        <a href="#" class="card-link">From Rs.999</a>
+                        <p class="card-subtitle text-light">SleepWell</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col bg-dark">
+                    <div class="card text-center sales bg-dark">
+                    <img src="https://rukminim1.flixcart.com/image/200/200/k0mqtu80/shoe/u/p/n/indi-exclusive-12-levi-s-navy-blue-original-imafke6bmczzkfxh.jpeg?q=70" class="card-img-top p-2 bg-dark img-fluid w-100" alt="Monitor">
+                    <div class="card-body p-1"title="From Rs.9999">
+                        <h6 class="card-title">Casual Shoes</h6>
+                        <a href="#" class="card-link">From Rs.1999</a>
+                        <p class="card-subtitle text-light">Nike, Puma, Adidas...</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card ml-2 p-2" style="height:15%;">
+            <img class="card-img img-fluid w-100" 
+            src="https://rukminim1.flixcart.com/flap/464/708/image/633789f7def60050.jpg?q=70" alt="ad">
+        </div>
+    </div>
+
+    <!-- Card Banner Section-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col pl-0 pr-2">
+                <img class="img-fluid cur" src="https://img1a.flixcart.com/fk-sp-static/images/seller_conclave.png" alt="">
+            </div>
+            <div class="col pl-0 pr-2">
+                <img class="img-fluid cur" src="https://img1a.flixcart.com/fk-sp-static/images/biz-paathshala-webinar.png" alt="">
+            </div>
+            <div class="col px-0">
+                <img class="img-fluid cur" src="https://img1a.flixcart.com/fk-sp-static/images/Samarth4.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Information Section -->
+    <h5><b>Flipkart: The One-stop Shopping Destination</b></h1>
+    <p>E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down. </p>
+    <br>
+    <p>What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to you, well, the below will answer your question.</p>
+    <br>
+    <h5><b>Flipkart Plus</b></h5>
+    <br>
+    <p>A world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins & non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when you shop more!</p>
+    <br>
+    <p>What's more, you can even use the Flipkart supercoins for a number of exciting services, like:An annual Zomato Gold membershipAn annual Hotstar Premium membership 6 months Gaana plus subscription Rupees 550 instant discount on flights on ixigo Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.
+    </p>
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col Footer">
+                <h5>ABOUT</h5>
+                <div>
+                    <a href="#">Contact Us</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Flipkart Stories</a>
+                    <a href="#">Wholesales</a>
+                    <a href="#">Coorperate Information</a>
+
+                </div>
+            </div>
+            <div class="col Footer">
+                <h5>HELP</h5>
+                <div>
+                    <a href="#">PAyments</a>
+                    <a href="#">Shipping</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Cancellation and Returns</a>
+                    <a href="#">Report Infringement</a>
+
+                </div>
+            </div>
+            <div class="col Footer">
+                <h5>POLICY</h5>
+                <div>
+                    <a href="#">Return Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Security</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">EPR Compliance</a>
+
+                </div>
+            </div>
+            <div class="col Footer">
+                <h5>SOCIAL</h5>
+                <div>
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Youtube</a>
+                </div>
+            </div>
+            <div class="col Footer vl border-light">
+                <h5>Mail Us: </h5>
+                <div>
+                    <p>Flipkart Internet Private Limited,</p>
+                    <p>Buildings Alyssa, Begonia &</p>
+                    <p>Clove Embassy Tech Village,</p>
+                    <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+                    <p>Bengaluru, 560103,</p>
+                    <p>Karnataka, India</p>
+                </div>
+            </div>
+            <div class="col Footer">
+                <h5>Registered Office Address: </h5>
+                <div>
+                    <p>Flipkart Internet Private Limited,</p>
+                    <p>Buildings Alyssa, Begonia &</p>
+                    <p>Clove Embassy Tech Village,</p>
+                    <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+                    <p>Bengaluru, 560103,</p>                    
+                    <p>Karnataka, India</p>
+                    <p>CIN : U51109KA2012PTC066107</p>
+                    <p>Telephone: <a href="#">044-45614700</a></p>
+                    
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row border-top mt-5 py-3 border-light text-light">
+            <div class="col">
+                <i class="fa fa-briefcase text-warning"></i>
+                <span >Sell on Flipkart</span>
+            </div>
+            <div class="col">
+                <i class="fab fa-stumbleupon-circle text-warning"></i>
+                <span>Advertise</span>
+            </div>
+            <div class="col">
+                <i class="fab fa-gift text-warning"></i>
+                <span>Gift Card</span>
+            </div>
+            <div class="col">
+                <i class="fab fa-stumbleupon-circle text-warning"></i>
+                <span>Help Centre</span>
+            </div>
+            <div class="col">
+                <i class="fab fa-stumbleupon-circle text-warning"></i>
+                <span>&copy; 2007-2020 Flipkart.com</span>
+            </div>
+            <div class="col-md-5 col-xs-6">
+                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg" alt="">
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
