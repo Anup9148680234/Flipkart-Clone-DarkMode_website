@@ -1,0 +1,219 @@
+/* Example for External CSS */
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+   background-color: black;
+}
+
+.logo{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.logo a{
+  
+    color: #00f1ff;
+    font-size: 11px;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.logo span{
+  color: #ffe500;
+}
+
+.search{
+  width: calc(100%-540px);
+  min-width: 250px;
+  margin-right: auto;
+  align-items: baseline;
+  color:grey;
+}
+
+.search input{
+    font-size: 0.8em;
+    border: none;
+    padding: 0;
+    outline: none;
+}
+
+.search input:focus{
+  box-shadow: none;
+}
+
+.search-item h6{
+  color: grey;
+  font-size: 0.8em;
+}
+
+.search-item a{
+  color: grey;
+  font-size: 0.9em;
+}
+
+.search input::placeholder{
+  color: white;
+}
+.login{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.login button{
+  border-radius: 0;
+  border: 0;
+  padding: 0.375rem 2.5rem;
+}
+
+.dropdown:hover .dropdown-menu{
+   display: block;
+}
+
+.login h6{
+  font-size: 0.9em;
+  justify-content: left;
+}
+
+.login-list a{
+  font-size: 0.8em;
+}
+
+#signUp{
+  font-weight: 600;
+}
+
+.more{
+  display: flex;
+  padding: 0;
+  justify-content: flex-start;
+ 
+}
+.more a{
+  border: none;
+  border-radius: 0;
+  outline: none;
+}
+.more-list{
+  font-size: 0.8em;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #00caea;
+  border-color: #007bff;
+}
+
+.slider-heading h4{
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+.sales-banner h6{
+  font-size: 0.9em;
+  margin-bottom: 0;
+
+}
+
+.sales-banner .view-btn{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.view-btn button{
+  font-size: 0.9em;
+  padding: 0.4em 1.5em;
+  border-radius: 0;
+}
+
+.sales{
+  cursor: pointer;
+  height: 15em;
+  padding: 0em 1em;
+  margin: 0.1em 0.2em;
+  width:13em;
+  border:0;
+  box-sizing: border-box;
+}
+
+.content-section{
+  height: fit-content;
+}
+
+.sales img{
+  height: 60%;
+  transform:scale(.97);
+}
+
+.sales img:hover{
+  transform: scale(1);
+}
+
+.sales a{
+  text-decoration: none;
+  color: cyan;
+  font-size: 0.95em;
+}
+
+.sales h6{
+  color:white;
+  font-size: 0.9em;
+}
+
+.sales p{
+  color: rgb(215, 215, 215);
+  opacity: .6;
+  font-size: 0.85em;
+  margin-top: 0.6em;
+}
+
+footer{
+  background-color: grey;
+  color: white;
+  padding-top: 3%;
+}
+
+.Footer h6{
+  color: grey;   
+  font-size: 0.8em;
+}
+
+.Footer div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 0.75em;
+}
+
+.Footer a{
+  color: cyan;
+  text-decoration: none;
+  margin:0%;
+  line-height: 1.2em;
+  font-size: 1em;
+}
+
+footer i{
+  color: gold;
+}
+
+footer span{
+  font-size: 0.75em;
+}
+
+@media screen and (max-width: 992px){
+  .view-btn button{
+    color: cyan;
+  }
+  .Navbar{
+    margin-bottom: 1em;
+    padding: .3em 0;
+    color: grey
+  }
+}
